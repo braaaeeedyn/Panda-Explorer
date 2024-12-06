@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-fact.css">
+    <link rel="stylesheet" href="styles-nav-foot.css">
+    <title>Panda Facts</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Panda Explorer</div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pandafacts.html">Panda Facts</a></li>
+                <li><a href="pandalocations.html">Locations</a></li>
+                <li><a href="pandamap.html">Panda Map</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="nav-image">
+            <img src="https://static.vecteezy.com/system/resources/previews/027/183/094/non_2x/cute-baby-panda-sticker-transparent-free-png.png"/>
+        </div>
+    </nav>
+
+    <section id="facts">
+        <h1>Panda Facts</h1>
+        <div id="panda-image-row" style="display: none;">
+            <div id="panda-image-display" class="image-container"></div>
+            <div id="panda-fact-display" class="fact-container"></div>
+            <div id="panda-gif-display" class="gif-container"></div>
+        </div>
+            
+        <button onclick="fetchAllPandaData()">Get Random Panda Data</button>
+        
+        <h3>All Facts So Far:</h3>
+        <p>Press to Copy!</p>
+        <ul id="fact-list"></ul>
+    
+    </section>
+    <footer id="footer">
+        <div class="footer-contacts">
+            <h3>Contact Information</h3>
+            <button onclick="window.location.href='contact.html'">Contact Me</button>
+            <button onclick="window.location.href='https://discord.gg/7mmDbPS3Jt'">Panda Discord</button>
+        </div>
+        <div class="footer-links">
+            <h3>Explore More</h3>
+            <div class="footer-images">
+                <a href="https://panda-api-temp.vercel.app/">
+                    <img src="https://pandaa.vercel.app/assets/logo2-Da8GDApt.png">
+                </a>
+                <a href="https://www.iucnredlist.org/">
+                    <img src="https://api.gbif.org/v1/image/unsafe/https%3A%2F%2Fraw.githubusercontent.com%2Fmdoering%2Fchecklist_builder%2Fmaster%2Fsrc%2Fmain%2Fresources%2Fiucn%2FIUCN_Red_List.svg">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

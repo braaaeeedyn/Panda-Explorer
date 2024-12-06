@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-nav-foot.css">
+    <link rel="stylesheet" href="styles-map.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <title>Panda Map</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Panda Explorer</div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pandafacts.html">Panda Facts</a></li>
+                <li><a href="pandalocations.html">Locations</a></li>
+                <li><a href="pandamap.html">Panda Map</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="nav-image">
+            <img src="https://static.vecteezy.com/system/resources/previews/027/183/094/non_2x/cute-baby-panda-sticker-transparent-free-png.png" alt="Panda Logo" />
+        </div>
+    </nav>
+
+    <section id="map">
+        <h1>Panda Map</h1>
+        <p>Explore an Interactive Map showing Popular Places to see Pandas!</p>
+        <div id="map-container"></div>
+        <div id="legend">
+            <button id="legend-toggle">-</button>
+            <div id="legend-content">
+                <h2>Legend</h2>
+                <div>
+                    <img src="https://images.vexels.com/content/196211/preview/cute-panda-character-245b50.png" style="width:30px; vertical-align:middle;">
+                    <span>Zoos listed in Panda Locations</span>
+                </div>
+                <div>
+                    <img src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png" style="width:25px; vertical-align:middle;">
+                    <span>Other Popular Zoos with Pandas</span>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+
+    <footer id="footer">
+        <div class="footer-contacts">
+            <h3>Contact Information</h3>
+            <button onclick="window.location.href='contact.html'">Contact Me</button>
+            <button onclick="window.location.href='https://discord.gg/7mmDbPS3Jt'">Panda Discord</button>
+        </div>
+        <div class="footer-links">
+            <h3>Explore More</h3>
+            <div class="footer-images">
+                <a href="https://panda-api-temp.vercel.app/" target="_blank">
+                    <img src="https://pandaa.vercel.app/assets/logo2-Da8GDApt.png" alt="Panda API">
+                </a>
+                <a href="https://www.iucnredlist.org/" target="_blank">
+                    <img src="https://api.gbif.org/v1/image/unsafe/https%3A%2F%2Fraw.githubusercontent.com%2Fmdoering%2Fchecklist_builder%2Fmaster%2Fsrc%2Fmain%2Fresources%2Fiucn%2FIUCN_Red_List.svg" alt="IUCN Red List">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="scriptmap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/osmtogeojson/3.0.0/osmtogeojson.min.js"></script>
+</body>
+</html>

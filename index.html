@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-home.css">
+    <link rel="stylesheet" href="styles-nav-foot.css">
+    <link rel="stylesheet" href="styles-fact.css">
+    <title>Panda Explorer - Home</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Panda Explorer</div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pandafacts.html">Panda Facts</a></li>
+                <li><a href="pandalocations.html">Locations</a></li>
+                <li><a href="pandamap.html">Panda Map</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="nav-image">
+            <img src="https://static.vecteezy.com/system/resources/previews/027/183/094/non_2x/cute-baby-panda-sticker-transparent-free-png.png"/>
+        </div>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to Panda Explorer</h1>
+        <p>Discover fascinating facts about pandas and find locations where you can see them!</p>
+        
+
+        <div id = "panda-image-row">
+            <div id="left-gif-container" class="gif-container"></div>
+            <div id="panda-image-container"></div>
+            <div id="right-gif-container" class="gif-container"></div>
+        </div>
+        <button onclick="fetchRandomPandaPicture()">Get Random Panda Image</button>
+        <button onclick="fetchRandomPandaGif('left'); fetchRandomPandaGif('right');">Get Random Panda GIFs</button>
+        <div id="panda-summary">
+            <p>Pandas, with their iconic black-and-white coats, are the rockstars of the animal kingdom. 
+                They’re devoted to a bamboo diet, spending most of their day feasting on it. Despite their laid-back appearance, 
+                pandas are surprisingly tough—skilled climbers and even capable swimmers, with a unique “thumb” (a special wrist bone)
+                 that helps them grip bamboo. Classified as "vulnerable," pandas face threats 
+                 from habitat loss and poaching, making their conservation essential. These charismatic, bamboo-loving creatures
+                  need our help to ensure their survival.</p>
+        </div>
+        <div class = "explore-buttons">
+            <button onclick="window.location.href='pandafacts.html'">
+                Explore Panda Facts
+                <span class = "description"> Get random and Interesting facts about pandas!</span>
+            </button>
+            <button onclick="window.location.href='pandalocations.html'">
+                Explore Panda Locations
+                <span class = "description"> Find Locations where pandas can be found!</span>
+            </button>
+            <button onclick="window.location.href='pandamap.html'">
+                Explore Panda Map
+                <span class = "description"> Interactive map to find locations where pandas are found!</span>
+            </button>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="footer-contacts">
+            <h3>Contact Information</h3>
+            <button onclick="window.location.href='contact.html'">Contact Me</button>
+            <button onclick="window.location.href='https://discord.gg/7mmDbPS3Jt'">Panda Discord</button>
+        </div>
+        <div class="footer-links">
+            <h3>Explore More</h3>
+            <div class="footer-images">
+                <a href="https://panda-api-temp.vercel.app/">
+                    <img src="https://pandaa.vercel.app/assets/logo2-Da8GDApt.png">
+                </a>
+                <a href="https://www.iucnredlist.org/">
+                    <img src="https://api.gbif.org/v1/image/unsafe/https%3A%2F%2Fraw.githubusercontent.com%2Fmdoering%2Fchecklist_builder%2Fmaster%2Fsrc%2Fmain%2Fresources%2Fiucn%2FIUCN_Red_List.svg">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
